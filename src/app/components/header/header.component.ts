@@ -8,6 +8,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
- 
+  @Output()
+  public value = new EventEmitter<string>();
+ constructor(){}
+ ngOnInit(){
+
+ }
+passData(){
+  console.log("button clicked")
+  this.value.emit("event binding")
+ }
 
 }

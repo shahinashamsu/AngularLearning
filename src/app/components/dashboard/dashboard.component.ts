@@ -12,8 +12,12 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class DashboardComponent {
  public dataToChild : string = "Input Binding"
+ public dataToParent : string = ""
  constructor(){
 
  }
  ngOnInit(){}
+ getData(str : string){
+  this.dataToParent=str
+}
 }
