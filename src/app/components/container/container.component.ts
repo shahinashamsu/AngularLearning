@@ -8,11 +8,12 @@ import { Component, Input } from '@angular/core';
   styleUrl: './container.component.css'
 })
 export class ContainerComponent {
+
   @Input()
-public data: string = ""
+ public dataFromParent: string = ""
   constructor(){}
   ngOnInit(){
-    console.log("Data is ",this.data)
+  
   }
 
 }

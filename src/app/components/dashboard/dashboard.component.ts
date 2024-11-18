@@ -11,5 +11,9 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
+ public dataToChild : string = "Input Binding"
+ constructor(){
 
+ }
+ ngOnInit(){}
 }
