@@ -11,9 +11,14 @@ export class ContainerComponent {
 
   @Input()
  public dataFromParent: string = ""
+ public msg: string = "message in child"
   constructor(){}
   ngOnInit(){
   
+  }
+
+  sayHello(){
+    console.log("Hello from container component")
   }
 
 }
