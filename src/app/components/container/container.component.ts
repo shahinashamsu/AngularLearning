@@ -17,8 +17,5 @@ export class ContainerComponent {
   
   }
 
-  sayHello(){
-    console.log("Hello from container component")
-  }
 
 }
